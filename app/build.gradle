@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '21.1.2'
 
     defaultConfig {
         applicationId "com.dm.labs.wifi.autosigning"
@@ -36,4 +36,13 @@ dependencies {
     testCompile 'org.mockito:mockito-core:1.10.19'
     testCompile 'org.hamcrest:hamcrest-library:1.1'
     androidTestCompile 'junit:junit:4.12'
+}
+
+ext {
+    ANDROID_BUILD_MIN_SDK_VERSION = 10
+    ANDROID_BUILD_TARGET_SDK_VERSION = 22
+    ANDROID_BUILD_TOOLS_VERSION = '22.0.1'
+    ANDROID_BUILD_SDK_VERSION = 22
+    SUPPORT_VERSION = '22.2.1'
+    MAVEN_VERSION = '1.1.3'
 }
