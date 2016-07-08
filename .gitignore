@@ -1,4 +1,3 @@
-*.iml
 .gradle
 /local.properties
 /.idea/workspace.xml
@@ -6,3 +5,20 @@
 .DS_Store
 /build
 /captures
+
+/.idea
+target
+bin
+
+*.iml
+
+# Package Files #
+*.class
+*.jar
+*.db
+*.hdb
+*.apk
+
+hs_err_pid*
+
+

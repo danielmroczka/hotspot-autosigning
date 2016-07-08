@@ -16,6 +16,7 @@ import java.io.InputStreamReader;
 public class Utils {
 
     public static String captureHtmlPage(String url) throws IOException {
+
         HttpClient client = new DefaultHttpClient();
         HttpGet request = new HttpGet(url);
         HttpResponse response = client.execute(request);
@@ -24,9 +25,8 @@ public class Utils {
         InputStream in = response.getEntity().getContent();
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));
         StringBuilder str = new StringBuilder();
-        String line = null;
-        while((line = reader.readLine()) != null)
-        {
+        String line;
+        while ((line = reader.readLine()) != null) {
             str.append(line);
         }
         in.close();

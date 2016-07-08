@@ -1,8 +1,8 @@
-package autosign.wifi.labs.dm.com.wifihotspotautosign;
+package com.dm.labs.wifi.autosigning;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * To work on unit tests, switch the Test Artifact in the Build Variants view.

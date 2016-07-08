@@ -11,7 +11,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import autosign.wifi.labs.dm.com.wifihotspotautosign.R;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
