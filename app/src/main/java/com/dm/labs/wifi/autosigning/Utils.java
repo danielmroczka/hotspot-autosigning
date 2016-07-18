@@ -15,6 +15,13 @@ import java.io.InputStreamReader;
  */
 public class Utils {
 
+    /**
+     * Returns context of html page
+     *
+     * @param url
+     * @return
+     * @throws IOException
+     */
     public static String captureHtmlPage(String url) throws IOException {
 
         HttpClient client = new DefaultHttpClient();
@@ -23,13 +30,16 @@ public class Utils {
 
         String html;
         InputStream in = response.getEntity().getContent();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
         StringBuilder str = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null) {
-            str.append(line);
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                str.append(line);
+            }
+        } finally {
+            in.close();
         }
-        in.close();
         html = str.toString();
         return html;
     }
