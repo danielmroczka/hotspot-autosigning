@@ -16,7 +16,7 @@ public class ForwardedPage {
         FileOutputStream outputStream1, outputStream2;
 
         try {
-            outputStream1 = context.openFileOutput(new Date().getTime() + ".txt", Context.MODE_PRIVATE);
+            outputStream1 = context.openFileOutput(new Date().getTime() + ".html", Context.MODE_PRIVATE);
             outputStream1.write(content.getBytes());
             outputStream1.close();
             outputStream2 = context.openFileOutput(new Date().getTime() + ".url", Context.MODE_PRIVATE);
