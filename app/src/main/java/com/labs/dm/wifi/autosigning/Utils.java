@@ -1,4 +1,4 @@
-package com.dm.labs.wifi.autosigning;
+package com.labs.dm.wifi.autosigning;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;

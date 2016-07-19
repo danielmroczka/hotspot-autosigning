@@ -1,4 +1,4 @@
-package com.dm.labs.wifi.autosigning;
+package com.labs.dm.wifi.autosigning;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;

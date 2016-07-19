@@ -1,4 +1,4 @@
-package com.dm.labs.wifi.autosigning;
+package com.labs.dm.wifi.autosigning;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
