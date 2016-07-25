@@ -1,4 +1,4 @@
-package autosign.wifi.labs.dm.com.wifihotspotautosign;
+package com.labs.dm.wifi.autosigning;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
